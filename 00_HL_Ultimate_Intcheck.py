@@ -1,3 +1,5 @@
+import random
+
 # Number checking function goes here
 def intcheck(question, low=None, high=None, exit_code = None):
 
@@ -67,3 +69,22 @@ for item in range(0, 4):
     # or a number between low_num and high_num
     guess = intcheck("Guess: ", low_num, high_num, "xxx")
     print("You guessed {}".format(guess))
+
+
+def statement_generator(statement, decorartion):
+
+    sides = decorartion * 3
+    
+    statement = "{} {} {}".format(sides, statement, sides)
+    top_bottom = decorartion * len(statement)
+
+    print(top_bottom)
+    print(statement)
+    print(top_bottom)
+    
+    return ""
+
+
+# Main routine goes here
+statement_generator("Welcome to the Higher Lower Game", "*")
+print()
