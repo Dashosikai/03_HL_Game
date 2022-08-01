@@ -1,4 +1,4 @@
-# HL component 11 - Maximum Guesses Calculator 
+2# HL component 11 - Maximum Guesses Calculator 
 
 import math 
 

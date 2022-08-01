@@ -61,7 +61,7 @@ print()
 statement_generator("For each game you will asked to... ", "")
 statement_generator("- Enter a 'low' and 'high' number. the computer will randomly", "")
 statement_generator("generate a", "")
-statement_generator("'secret' number between your two chosen numbers. Tt will ues", "")
+statement_generator("'secret' number between your two chosen numbers. It will ues", "")
 statement_generator("these numbers for all", "")
 statement_generator("the rounds in a given game.", "")
 statement_generator("- The computer will calculate how many guesses you are allowed", "")
@@ -75,7 +75,7 @@ print()
 
 
 # Ask user for # of rounds..
-rounds = intcheck("How many rounds <enter> for infintite: ", 1, exit_code = "")
+rounds = intcheck("Please press <enter> to begin...", 1, exit_code = "")
 
 if rounds == "":
     print("you chose infinite mode")
@@ -98,5 +98,5 @@ for item in range(0, 4):
     guess = intcheck("Guess: ", low_num, high_num, "xxx")
     print("You guessed {}".format(guess))
 
-   
+
 statement_generator("Congratulation you have guessed the right number", "*")
